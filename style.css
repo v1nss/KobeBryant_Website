@@ -26,12 +26,69 @@ section {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 96vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
   z-index: 1;
 }
+
+/* NAVIGATION STYLES */
+
+nav,
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-size: 20px;
+  padding-right: 2vh;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 7vh;
+  transition: 0.3s;
+  background-color: black;
+  z-index: 4;
+}
+
+li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  padding: 8px 10px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fac106;
+  bottom: -9px;
+  left: 0;
+  transition: ease 0.4s;
+}
+
+.nav-links a:hover {
+  color: #fac106;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* PROFILE STYLES */
+
 #profile {
   display: relative;
   align-items: center;
@@ -119,63 +176,12 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .6;
+    opacity: .7;
 }
 
-nav,
-.nav-links {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  font-size: 20px;
-  padding-right: 2vh;
-}
-
-nav {
-  width: 100%;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  height: 7vh;
-  transition: 0.3s;
-  background-color: black;
-  z-index: 4;
-}
-
-li {
-  position: relative;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #fff;
-  font-weight: 400;
-  padding: 8px 10px;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: #fac106;
-  bottom: -9px;
-  left: 0;
-  transition: ease 0.4s;
-}
-
-.nav-links a:hover {
-  color: #fac106;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
+/* ABOUT STYLES */
 
 #about{
-  display: relative;
   align-items: center;
   justify-content: center;
   gap: 5rem;
@@ -196,7 +202,7 @@ li {
 }
 
 .about-mid {
-  clip-path: polygon(5% 100%, 34.8% 0%, 36.8% 0%, 7% 100%, 0% 100%, 0% 100%);
+  clip-path: polygon(5% 100%, 33% 0%, 35% 0%, 7% 100%, 0% 100%, 0% 100%);
   z-index: 4;
   background-color: rgb(0, 0, 0);
 }
@@ -204,65 +210,80 @@ li {
 .about-back {
   background-color: #000000;
   display: flex;
-  align-items: center;
   justify-content: left;
   z-index: 2;
 }
 
 .about-container{
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   justify-content: center;
   position: relative;
   z-index: 5;
 }
 
-.rook-hover,
-.senior-hover,
-.retire-hover{
-  position: relative;
-  width: 45vh;
+.card{
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
 }
 
-.rook-hover .rookie-box,
-.senior-hover .senior-box,
-.retire-hover .retire-box{
-  text-align: justify;
-  background:#cc9d04;
-  padding: 60px;
-  margin: 30px;
-  border-radius: 10px;
-  background-size: contain;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+.about-container img{
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
+  transition: .5s;
 }
 
-.rook-hover:hover .rookie-box {
-  background-image: url('assets/kobe3.jpg');
-  opacity: 0.5;
+.intro{
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 50px;
+  border-radius: 0px 0px 20px 20px;
+  background: rgba(49, 49, 49, 0.6);
+  color: #ffffff;
+  transition: .5s;
 }
 
-.senior-hover:hover .senior-box {
-  background-image: url('assets/kobe2.jpg');
-  opacity: 0.5;
+.intro h1{
+  margin: 10px; 
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
-.retire-hover:hover .retire-box {
-  background-image: url('assets/kobe4.jpg');
-  opacity: 0.5;
-}
-
-.rookie-box p,
-.senior-box p,
-.retire-box p{
-  color: #000000;
-  font-weight: 400;
-  text-align: justify;
-}
-
-.rookie-box p:hover,
-.senior-box p:hover,
-.retire-box p:hover{
-  transition: opacity 0.3s ease;
+.intro p{
+  color: white;
+  margin: 20px;
+  visibility: hidden;
   opacity: 0;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .intro{
+  height: 200px;
+  bottom: 50px;
+  color: white;
+  background: rgba(49, 49, 49, 0.6);
+}
+
+.card:hover p{
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.card:hover img{
+  transform: scale(1.1);
 }
