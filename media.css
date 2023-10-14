@@ -11,6 +11,80 @@
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+    #nav {
+        display: none;
+    }
+    
+    #hamburger-nav {
+        display: flex;
+    }
+
+    .profile-container {
+        margin: 0vh;
+    }
+
+    .profile-box{
+        width: 50%;
+    }
+
+    .back{
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .back img {
+        width: auto;
+        height: 100%;
+    }
+
+    .card{
+        height: 350px;
+        width: 250px;
+        margin: 20px;
+        transition: 0.3s ease-in;
+    }
+
+    .img-box,
+    .img-box img{
+        height: 350px;
+        width: 260px;
+    }
+
+    .card:hover{
+        display: visible;
+    }
+
+    .intro{
+        padding: 2px;
+        height: 45px;
+        width: 260px;
+    }
+
+    .intro h1{
+        font-size: 1.3rem;
+        margin: 4px 0px 10px 10px;
+    }
+
+    .intro p{
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin: 8px;
+    }
+
+    .card:hover .intro{
+        height: 150px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #nav {
+        display: none;
+    }
+    
+    #hamburger-nav {
+        display: flex;
+    }
+
     .profile-container {
         margin: 0vh;
     }
@@ -31,64 +105,65 @@
 
     .card{
         height: 300px;
-        width: 350px;
+        width: 215px;
         margin: 20px;
         transition: 0.3s ease-in;
     }
 
-    .card:hover{
-        height: 500px;
-    }
-
-    .card:hover .img-box img{
-        display: visible;
-        height: 500px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-    .profile-container {
-        margin: 0vh;
-    }
-
-    .profile-box{
-        width: 50%;
-    }
-
-    .back{
-        justify-content: center;
-        overflow: hidden;
-    }
-    
-    .back img {
-        width: auto;
-        height: 100%;
-    }
-
-    .card{
-        height: 260px;
-        width: 350px;
-        margin: 10px;
-        transition: 0.3s ease-in;
+    .img-box,
+    .img-box img{
+        height: 300px;
+        width: 225px;
     }
 
     .card:hover{
-        height: 500px;
+        display: visible;
     }
 
-    .card:hover .img-box img{
-        display: visible;
-        height: 500px;
+    .intro{
+        padding: 2px;
+        height: 37px;
+        width: 225px;
+    }
+
+    .intro h1{
+        font-size: 1.1rem;
+        margin: 4px 0px 10px 10px;
+    }
+
+    .intro p{
+        font-size: 0.8rem;
+        margin: 8px;
+    }
+
+    .card:hover .intro{
+        height: 150px;
     }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+    #nav {
+        display: none;
+    }
+    
+    #hamburger-nav {
+        display: flex;
+    }
+
     .profile-container {
         margin: 0vh;
     }
 
     .profile-box{
         width: 50%;
+    }
+
+    .profile-box h1{
+        font-size: 1.3rem;
+    }
+
+    .profile-box h2{
+        font-size: 1rem;
     }
 
     .back{
@@ -102,23 +177,58 @@
     }
 
     .card{
-        height: 130px;
-        width: 350px;
-        margin: 10px;
+        height: 250px;
+        width: 175px;
+        margin: 20px;
         transition: 0.3s ease-in;
     }
 
-    .card:hover{
-        height: 500px;
+    .img-box{
+        height: 250px;
+        width: 175px;
     }
 
-    .card:hover .img-box img{
+    .img-box img{
+        height: 250px;
+        width: 175px;
+    }
+
+    .card:hover{
         display: visible;
-        height: 500px;
+    }
+
+    .intro{
+        padding: 2px;
+        height: 35px;
+        width: 175px;
+    }
+
+    .intro h1{
+        font-size: 1rem;
+        margin: 4px 0px 10px 10px;
+    }
+
+    .intro p{
+        font-size: 0.7rem;
+        margin: 8px;
+    }
+
+    .card:hover .intro{
+        height: 150px;
     }
 }   
 
 @media (max-width: 576px) {
+    #nav {
+        display: none;
+        z-index: 5;
+    }
+    
+    #hamburger-nav {
+        display: flex;
+        height: 40px;
+        z-index: 6;
+    }
 
     .profile-container {
         margin: 0vh;
@@ -128,6 +238,14 @@
         width: 70%;
     }
 
+    .profile-box h1{
+        font-size: 1.2rem;
+    }
+
+    .profile-box h2{
+        font-size: 0.9rem;
+    }
+
     .back{
         justify-content: center;
         overflow: hidden;
@@ -139,19 +257,44 @@
     }
 
     .card{
-        height: 130px;
-        width: 350px;
+        height: 250px;
+        width: 175px;
         margin: 10px;
         transition: 0.3s ease-in;
     }
 
-    .card:hover{
-        height: 500px;
+    .img-box{
+        height: 250px;
+        width: 175px;
     }
 
-    .card:hover .img-box img{
+    .img-box img{
+        height: 250px;
+        width: 175px;
+    }
+
+    .card:hover{
         display: visible;
-        height: 500px;
+    }
+
+    .intro{
+        padding: 2px;
+        height: 35px;
+        width: 175px;
+    }
+
+    .intro h1{
+        font-size: 1rem;
+        margin: 4px 0px 10px 10px;
+    }
+
+    .intro p{
+        font-size: 0.7rem;
+        margin: 8px;
+    }
+
+    .card:hover .intro{
+        height: 150px;
     }
 
 }   
