@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -68,22 +69,26 @@ li {
   padding: 8px 10px;
 }
 
-.nav-links a::after {
+.nav-links a::after{
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
   background-color: #fac106;
-  bottom: -9px;
+  bottom: 13px;
   left: 0;
   transition: ease 0.4s;
 }
 
-.nav-links a:hover {
-  color: #fac106;
+.nav-links a:hover,
+.nav-links a.active{
+  color: #727272;
+  background-color: #35353554;
+  transition: 0.3s ease-in;
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after  {
   width: 100%;
 }
 
@@ -124,28 +129,29 @@ li {
 }
 
 .back img {
-    margin-left: auto;
-    width: 37%;
-    height: auto;
+  margin-left: auto;
+  width: 65%;
+  height: auto;
 }
 
 .profile-container {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-left: 38vh;
+  margin: 0 0 0 15vh;
+  justify-content: center;
   text-align: center;
 }
 
 .profile-box {
-  border-radius: 30px;
+  width: 30%;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #cc9d04, #fac106, #cc9d04);
+  background: rgba(49, 49, 49, 0.8);
   box-shadow: rgb(0, 0, 0, 0.3) 12px 12px 3px;
   text-align: center;
-  padding: 5vh 8vh;
+  padding: 3vh 2vh;
   position: relative;
   z-index: 4;
 }
@@ -153,17 +159,18 @@ li {
 .profile-box h1 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .profile-box h2 {
     font-size: 1.2rem;
     margin-top: 20px;
+    color: rgb(255, 255, 255);
     text-align: right;
 }
 
 .video-container {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -211,29 +218,43 @@ video {
   background-color: #000000;
   display: flex;
   justify-content: left;
+  overflow: hidden;
   z-index: 2;
+}
+
+.about-back img{
+  opacity: 0.2;
 }
 
 .about-container{
   display: inline-flex;
   justify-content: center;
   position: relative;
+  flex-wrap: wrap;
   z-index: 5;
 }
 
 .card{
   height: 500px;
-  margin: 50px;
+  margin: 20px;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px #cc9d04 solid;
   border-radius: 20px;
   box-shadow: 5px 5px 20px black;
   overflow: hidden;
 }
 
-.about-container img{
+.img-box{
+  position: relative;
+  width: 350px;
+  height: 500px;
+}
+
+.img-box img{
   height: 500px;
   width: 350px;
   border-radius: 20px;
@@ -246,7 +267,7 @@ video {
   padding: 6px;
   box-sizing: border-box;
   position: absolute;
-  bottom: 50px;
+  bottom: 0px;
   border-radius: 0px 0px 20px 20px;
   background: rgba(49, 49, 49, 0.6);
   color: #ffffff;
@@ -272,7 +293,7 @@ video {
 
 .card:hover .intro{
   height: 200px;
-  bottom: 50px;
+  bottom: 0px;
   color: white;
   background: rgba(49, 49, 49, 0.6);
 }

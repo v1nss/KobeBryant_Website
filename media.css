@@ -1,19 +1,157 @@
 @media (min-width: 1201px) {
-  
+    .back{
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .back img {
+        width: auto;
+        height: 100%;
+    }
 }
 
-@media (min-width: 993px) and (max-width: 1400px) {
+@media (min-width: 993px) and (max-width: 1200px) {
+    .profile-container {
+        margin: 0vh;
+    }
+
+    .profile-box{
+        width: 50%;
+    }
+
+    .back{
+        justify-content: center;
+        overflow: hidden;
+    }
     
+    .back img {
+        width: auto;
+        height: 100%;
+    }
+
+    .card{
+        height: 300px;
+        width: 350px;
+        margin: 20px;
+        transition: 0.3s ease-in;
+    }
+
+    .card:hover{
+        height: 500px;
+    }
+
+    .card:hover .img-box img{
+        display: visible;
+        height: 500px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+    .profile-container {
+        margin: 0vh;
+    }
 
+    .profile-box{
+        width: 50%;
+    }
+
+    .back{
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .back img {
+        width: auto;
+        height: 100%;
+    }
+
+    .card{
+        height: 260px;
+        width: 350px;
+        margin: 10px;
+        transition: 0.3s ease-in;
+    }
+
+    .card:hover{
+        height: 500px;
+    }
+
+    .card:hover .img-box img{
+        display: visible;
+        height: 500px;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+    .profile-container {
+        margin: 0vh;
+    }
 
-}
+    .profile-box{
+        width: 50%;
+    }
+
+    .back{
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .back img {
+        width: auto;
+        height: 100%;
+    }
+
+    .card{
+        height: 130px;
+        width: 350px;
+        margin: 10px;
+        transition: 0.3s ease-in;
+    }
+
+    .card:hover{
+        height: 500px;
+    }
+
+    .card:hover .img-box img{
+        display: visible;
+        height: 500px;
+    }
+}   
 
 @media (max-width: 576px) {
 
-}
+    .profile-container {
+        margin: 0vh;
+    }
+
+    .profile-box{
+        width: 70%;
+    }
+
+    .back{
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .back img {
+        height: 100%;
+        width: auto;
+    }
+
+    .card{
+        height: 130px;
+        width: 350px;
+        margin: 10px;
+        transition: 0.3s ease-in;
+    }
+
+    .card:hover{
+        height: 500px;
+    }
+
+    .card:hover .img-box img{
+        display: visible;
+        height: 500px;
+    }
+
+}   
