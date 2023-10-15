@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header h1 {
+  letter-spacing: 2px; /* Adjust the letter spacing to increase space between letters */
+}
+
+.card h2 {
+  margin-bottom: 5px; /* Reduce the bottom margin to bring h2 closer to the following p */
+}
+
+.card p {
+  margin: 0; /* Remove the default margin of p elements to make them closer */
+}
+
+.box {
+  width: 70%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.text{
+  flex: 1;
+  line-height: 1.2;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.img-container {
+  width: 100px;
+  height: auto;
+  border-radius: 60%; /* Make the image border container circular */
+  margin-right: 10px;
+}
+
+.text {
+  flex: 1;
+}
