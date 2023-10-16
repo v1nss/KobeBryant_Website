@@ -69,7 +69,7 @@
   .brand-container{
     /* text-align: center; */
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     z-index: 5;
     /* padding-left: 20px; */
@@ -78,6 +78,7 @@
   }
 
   .box{
+    
     width: 266px;
     height: 909px;
     background-color: #fac106;
