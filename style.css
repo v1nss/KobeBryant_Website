@@ -2,7 +2,7 @@
   font-family: Poppins;
   src: url("./assets/fonts/Poppins-Regular.ttf");
   font-family: Akira;
-  src: url("./akira.otf");
+  src: url("./assets/fonts/akira.otf");
 }
 
 * {
@@ -36,18 +36,19 @@ section {
   position: absolute;
   justify-content: center;
   align-items: baseline;
-  width: 70%;
-  padding-top: 100px;
+  width: 100%;
+  margin-top: 100px;
   overflow: hidden;
   display: flex;
   white-space: nowrap;
-  z-index: 3;
+  background-color: #29292996;
+  z-index: 5;
 }
 
 .title {
   font-family: "Akira";
-  background-color: #29292996;
-  font-size: 60px;
+  
+  font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
@@ -64,7 +65,7 @@ section {
     transform: translate3d(-100%, 0, 0);
   }
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 }
 
@@ -108,7 +109,7 @@ li {
   width: 0;
   height: 2px;
   background-color: #fac106;
-  bottom: 13px;
+  bottom: 11px;
   left: 0;
   transition: ease 0.4s;
 }
@@ -183,7 +184,7 @@ li {
   width: 0;
   height: 2px;
   background-color: #fac106;
-  bottom: 21px;
+  bottom: 50%;
   left: 0;
   transition: ease 0.4s;
 }
@@ -291,7 +292,7 @@ li {
   height: 40%;
   border-radius: 10px;
   border: 1px solid #fac106;
-  background: url(/assets/bwkobe.jpg);
+  background: url(/assets/pictures/bwkobe.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: rgb(0, 0, 0, 0.3) 12px 12px 3px;
@@ -640,4 +641,3 @@ video {
   justify-content: center;
   gap: 5rem;
 }
-
