@@ -529,41 +529,15 @@ video {
   position: absolute;
   bottom: 0px;
   border-radius: 0px 0px 20px 20px;
-  background: rgb(255, 255, 255);
-  color: #000000;
-  transition: 0.5s;
-}
-
-.upper{
-  height: 30px;
-  width: 350px;
-  padding: 6px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0px;
-  border-radius: 20px 20px 0px 0px;
-  background: rgb(255, 255, 255);
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.upper h3{
-  color: #000000;
-  font-size: 0.8rem;
-}
-
-.card:hover .upper{
   background: rgba(49, 49, 49, 0.6);
-}
-
-.card:hover .upper h3{
-  color: white;
+  color: #fff;
+  transition: 0.5s;
 }
 
 .intro h1 {
   margin: 10px;
   font-size: 1.1rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .intro p {

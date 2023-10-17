@@ -23,3 +23,7 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+ScrollReveal().reveal(".card", {delay: 200, easing: "ease-out", interval: 200, scale: 1.2, reset: true});
+ScrollReveal().reveal(".scrolling_text", {delay: 300, easing: "ease-out", reset: true});
+ScrollReveal().reveal(".profile-box", {reset: true, delay: 200, easing: "ease-out"});
