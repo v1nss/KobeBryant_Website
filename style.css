@@ -615,3 +615,148 @@ video {
   justify-content: center;
   gap: 5rem;
 }
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+
+.rook-hover,
+.senior-hover,
+.retire-hover {
+  position: relative;
+  width: 45vh;
+}
+
+.rook-hover .rookie-box,
+.senior-hover .senior-box,
+.retire-hover .retire-box {
+  text-align: justify;
+  background: #cc9d04;
+  padding: 60px;
+  margin: 30px;
+  border-radius: 10px;
+  background-size: contain;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.rook-hover:hover .rookie-box {
+  background-image: url("assets/kobe3.jpg");
+  opacity: 0.5;
+}
+
+.senior-hover:hover .senior-box {
+  background-image: url("assets/kobe2.jpg");
+  opacity: 0.5;
+}
+
+.retire-hover:hover .retire-box {
+  background-image: url("assets/kobe4.jpg");
+  opacity: 0.5;
+}
+
+.rookie-box p,
+.senior-box p,
+.retire-box p {
+  color: #000000;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.rookie-box p:hover,
+.senior-box p:hover,
+.retire-box p:hover {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* Timeline of Kobe & achievement */
+.timeline-section{
+	background-color: #24292d;
+	min-height: 100vh;
+	padding: 100px 15px;
+  height: auto;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items h1
+{
+	align-items: center;
+	text-align: center;
+	display: flex;
+	text-align: center;
+	vertical-align:middle;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+
+.timeline-content img
+{
+	width: auto;
+	height: 200px;
+	padding-left: 10px;
+}
+
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
