@@ -681,8 +681,14 @@ video {
 	padding: 100px 15px;
   height: auto;
 }
+/* .achievements{
+	min-height: 100vh;
+	padding: 100px 15px;
+  height: auto;
+  z-index: 5;
+} */
 .timeline-items{
-	max-width: 1000px;
+	max-width: 70%;
 	margin:auto;
 	display: flex;
 	flex-wrap: wrap;
