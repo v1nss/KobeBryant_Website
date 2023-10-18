@@ -273,7 +273,8 @@ li {
 
 .back img {
   margin-left: auto;
-  width: 65%;
+  width: 100%;
+  opacity: 0.3;
   height: auto;
 }
 
@@ -634,20 +635,12 @@ video {
   z-index: 4;
 }
 
-.upper-devs{
+.dev{
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  padding: 20px 50px 10px 60px;
-}
-
-.lower-devs{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-self: center;
-  padding: 10px 60px 10px 60px;
+  padding: 20px;
 }
 
 .contact-content{

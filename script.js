@@ -25,5 +25,7 @@ function toggleMenu() {
 }
 
 ScrollReveal().reveal(".card", {delay: 200, easing: "ease-out", interval: 200, scale: 1.2, reset: true});
+ScrollReveal().reveal(".lower-devs", {delay: 200, easing: "ease-out", interval: 200, scale: 1.2, reset: true});
+ScrollReveal().reveal(".upper-devs", {delay: 200, easing: "ease-out", interval: 200, scale: 1.2, reset: true});
 ScrollReveal().reveal(".scrolling_text", {delay: 300, easing: "ease-out", reset: true});
 ScrollReveal().reveal(".profile-box", {reset: true, delay: 200, easing: "ease-out"});
