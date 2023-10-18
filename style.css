@@ -62,10 +62,10 @@ section {
 
 @keyframes animate_text {
   from {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
   to {
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
@@ -117,7 +117,6 @@ li {
 .nav-links a:hover,
 .nav-links a.active {
   color: #727272;
-  background-color: #35353554;
   transition: 0.3s ease-in;
 }
 
@@ -141,14 +140,14 @@ li {
 .hamburger-icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 20px;
-  width: 25px;
+  width: 30px;
   cursor: pointer;
 }
 
 .hamburger-icon span {
-  width: 100%;
+  width: 75%;
   height: 2px;
   background-color: #fac106;
   transition: all 0.3 ease-in-out;
@@ -274,7 +273,8 @@ li {
 
 .back img {
   margin-left: auto;
-  width: 65%;
+  width: 100%;
+  opacity: 0.3;
   height: auto;
 }
 
@@ -614,6 +614,91 @@ video {
 #highlights{
   justify-content: center;
   gap: 5rem;
+}
+
+/* Contacts */
+
+#contact{
+  justify-content: center;
+  gap: 5rem;
+}
+
+.contact-container{
+  padding-top: 10vh;
+  height: 30%;
+  width: 75%;
+  display: inline-flex;
+  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 4;
+}
+
+.dev{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  padding: 20px;
+}
+
+.contact-content{
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 100px;
+  background-color: #5252525e;
+}
+
+.contact-content img{
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 100px;
+  border: #cc9d04 solid 1px;
+}
+
+.contact-text{
+  align-self: center;
+  padding-right: 30px;
+}
+
+.contact-text h1{
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.contact-text a{
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.contact-text a:hover{
+  color: #cc9d04;
+  font-weight: 300;
+}
+
+.video-closing {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  object-fit: cover;
+  opacity: 0.7;
 }
 
 .about-container {
