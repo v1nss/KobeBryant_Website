@@ -88,7 +88,7 @@ nav {
   height: 7vh;
   transition: 0.3s;
   background-color: black;
-  z-index: 4;
+  z-index: 5;
 }
 
 li {
@@ -609,6 +609,112 @@ video {
   opacity: 0.2;
 }
 
+/* Timeline of Kobe & achievement */
+/* .timeline-section{
+	background-color: #24292d;
+  background-color: transparent;
+	min-height: 100vh;
+	padding: 100px 15px;
+  height: auto;
+} */
+.achievements{
+  /* background: repeat; */
+	/* padding: 100px 15px; */
+  display:flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: auto;
+  z-index: 4;
+  min-height: 100vh;
+	/* padding: 100px 15px; */
+  height: auto;
+  position:relative;
+  overflow-y: hidden;
+}
+.timeline-items{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  z-index: 4;
+	max-width: 70%;
+	/* margin:auto; */
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items h1
+{
+	align-items: center;
+	text-align: center;
+	display: flex;
+	text-align: center;
+	vertical-align:middle;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+
+.timeline-content img
+{
+	width: auto;
+	height: 200px;
+	padding-left: 10px;
+}
+
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+
 /* Highlights */
 
 #highlights{
@@ -759,107 +865,3 @@ video {
   opacity: 0;
 }
 
-/* Timeline of Kobe & achievement */
-/* .timeline-section{
-	background-color: #24292d;
-  background-color: transparent;
-	min-height: 100vh;
-	padding: 100px 15px;
-  height: auto;
-} */
-.achievements{
-  /* background: repeat; */
-	/* padding: 100px 15px; */
-  display:flex;
-  /* align-items: center; */
-  justify-content: center;
-  height: auto;
-  z-index: 5;
-  min-height: 100vh;
-	/* padding: 100px 15px; */
-  height: auto;
-  position:relative;
-  overflow-y: hidden;
-}
-.timeline-items{
-  margin-top: 200px;
-  margin-bottom: 200px;
-  z-index: 5;
-	max-width: 70%;
-	/* margin:auto; */
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-}
-.timeline-items h1
-{
-	align-items: center;
-	text-align: center;
-	display: flex;
-	text-align: center;
-	vertical-align:middle;
-}
-.timeline-items::before{
-	content: '';
-	position: absolute;
-	width: 2px;
-	height: 100%;
-	background-color: #2f363e;
-	left: calc(50% - 1px);
-}
-.timeline-item{
-	margin-bottom: 40px;
-	width: 100%;
-	position: relative;
-}
-
-.timeline-content img
-{
-	width: auto;
-	height: 200px;
-	padding-left: 10px;
-}
-
-.timeline-item:last-child{
-	margin-bottom: 0;
-}
-.timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
-	text-align: right;
-}
-.timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);
-}
-.timeline-dot{
-	height: 16px;
-	width: 16px;
-	background-color: #eaa023;
-	position: absolute;
-	left: calc(50% - 8px);
-	border-radius: 50%;
-	top:10px;
-}
-.timeline-date{
-	font-size: 18px;
-	color: #eaa023;
-	margin:6px 0 15px;
-}
-.timeline-content{
-    background-color: #2f363e;
-	padding: 30px;
-	border-radius: 5px;
-}
-
-.timeline-content h3{
-    font-size: 20px;
-	color: #ffffff;
-	margin:0 0 10px;
-	text-transform: capitalize;
-	font-weight: 500;
-}
-.timeline-content p{
-    color: #c8c8c8;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 22px;
-}
