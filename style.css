@@ -144,6 +144,7 @@ li {
   height: 20px;
   width: 30px;
   cursor: pointer;
+  transition: all 0.3 ease-in-out;
 }
 
 .hamburger-icon span {
@@ -191,6 +192,7 @@ li {
 .menu-links a:hover::after,
 .menu-links a.active::after {
   width: 100%;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a:hover,
@@ -225,14 +227,19 @@ li {
 
 .hamburger-icon span:first-child {
   transform: none;
+  transition: 0.3s ease;
+
 }
 
 .hamburger-icon span:first-child {
   opacity: 1;
+  transition: all 0.3s ease-in-out;
+
 }
 
 .hamburger-icon span:first-child {
   transform: none;
+  transition: all 0.3s ease-in-out;
 }
 
 /* PROFILE STYLES */
