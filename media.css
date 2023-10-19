@@ -84,10 +84,26 @@
         height: 150px;
     }
 
-    .upper{
-        width: 260px;
-        padding-left: 15px;
+    /* Contacts */
+    .contact-container{
+        width: 100%;
+        height: 50%;
     }
+
+    .contact-content,
+    .contact-content img{
+        height: 75px;
+        width: 75px;
+    }
+
+    .contact-text{
+        padding-right: 10px;
+    }
+
+    .contact-text h1{
+        font-size: 1rem;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -163,14 +179,26 @@
         height: 150px;
     }
 
-    .upper{
-        width: 225px;
-        padding: 5px 0px 5px 15px;
+    /* Contacts */
+    .contact-container{
+        width: 100%;
+        height: 50%;
     }
 
-    .upper h3{
-        font-size: 12px;
+    .contact-content,
+    .contact-content img{
+        height: 75px;
+        width: 75px;
     }
+
+    .contact-text{
+        padding-right: 10px;
+    }
+
+    .contact-text h1{
+        font-size: 1rem;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -258,15 +286,44 @@
         height: 150px;
     }
 
-    .upper{
-        width: 175px;
-        height: 20px;
-        padding: 5px 0px 5px 10px;
+    .timeline-items::before {
+        left: 7px;
     }
 
-    .upper h3{
-        font-size: 10px;
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
     }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    /* Contacts */
+    .contact-container{
+        width: 100%;
+        height: 50%;
+    }
+
+    .contact-content,
+    .contact-content img{
+        height: 75px;
+        width: 75px;
+    }
+
+    .contact-text{
+        padding-right: 10px;
+    }
+
+    .contact-text h1{
+        font-size: 1rem;
+    }
+
 }   
 
 @media (max-width: 576px) {
@@ -357,14 +414,36 @@
         height: 150px;
     }
 
-    .upper{
-        width: 175px;
-        height: 20px;
-        padding: 2px 0px 2px 10px;
+    .timeline-items::before {
+        left: 7px;
     }
 
-    .upper h3{
-        font-size: 10px;
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .timeline-content img{
+        width: 200px;
+        height: auto;
+    }
+
+    .timeline-content h3{
+        font-size: 1rem;
+    }
+
+    .timeline-content p{
+        font-size: 0.7rem;
+        text-align: justify;
     }
 
     /* Contacts */
@@ -386,5 +465,4 @@
     .contact-text h1{
         font-size: 1rem;
     }
-
 }   

@@ -87,8 +87,8 @@ nav {
   justify-content: right;
   height: 7vh;
   transition: 0.3s;
-  background-color: black;
-  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.61);
+  z-index: 7;
 }
 
 li {
@@ -461,12 +461,12 @@ video {
 
 .about-front {
   clip-path: polygon(0% 0%, 35% 0%, 5% 100%, 0% 100%, 0% 100%);
-  z-index: 4;
+  z-index: 3;
 }
 
 .about-mid {
   clip-path: polygon(5% 100%, 33% 0%, 35% 0%, 7% 100%, 0% 100%, 0% 100%);
-  z-index: 4;
+  z-index: 3;
   background-color: rgb(0, 0, 0);
 }
 
@@ -489,7 +489,7 @@ video {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  z-index: 4;
+  z-index: 3;
 }
 
 .card {
@@ -575,6 +575,12 @@ video {
 #achievements{
   justify-content: center;
   gap: 5rem;
+  display:flex;
+  height: auto;
+  z-index: 4;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .achi-front,
@@ -609,34 +615,11 @@ video {
   opacity: 0.2;
 }
 
-/* Timeline of Kobe & achievement */
-/* .timeline-section{
-	background-color: #24292d;
-  background-color: transparent;
-	min-height: 100vh;
-	padding: 100px 15px;
-  height: auto;
-} */
-.achievements{
-  /* background: repeat; */
-	/* padding: 100px 15px; */
-  display:flex;
-  /* align-items: center; */
-  justify-content: center;
-  height: auto;
-  z-index: 4;
-  min-height: 100vh;
-	/* padding: 100px 15px; */
-  height: auto;
-  position:relative;
-  overflow-y: hidden;
-}
 .timeline-items{
   margin-top: 200px;
   margin-bottom: 200px;
   z-index: 4;
 	max-width: 70%;
-	/* margin:auto; */
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
@@ -713,7 +696,6 @@ video {
 	font-weight: 300;
 	line-height: 22px;
 }
-
 
 /* Highlights */
 
@@ -806,62 +788,3 @@ video {
   object-fit: cover;
   opacity: 0.7;
 }
-
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 5;
-}
-
-.rook-hover,
-.senior-hover,
-.retire-hover {
-  position: relative;
-  width: 45vh;
-}
-
-.rook-hover .rookie-box,
-.senior-hover .senior-box,
-.retire-hover .retire-box {
-  text-align: justify;
-  background: #cc9d04;
-  padding: 60px;
-  margin: 30px;
-  border-radius: 10px;
-  background-size: contain;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.rook-hover:hover .rookie-box {
-  background-image: url("assets/kobe3.jpg");
-  opacity: 0.5;
-}
-
-.senior-hover:hover .senior-box {
-  background-image: url("assets/kobe2.jpg");
-  opacity: 0.5;
-}
-
-.retire-hover:hover .retire-box {
-  background-image: url("assets/kobe4.jpg");
-  opacity: 0.5;
-}
-
-.rookie-box p,
-.senior-box p,
-.retire-box p {
-  color: #000000;
-  font-weight: 400;
-  text-align: justify;
-}
-
-.rookie-box p:hover,
-.senior-box p:hover,
-.retire-box p:hover {
-  transition: opacity 0.3s ease;
-  opacity: 0;
-}
-
