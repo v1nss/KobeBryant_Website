@@ -3,9 +3,484 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kobe Bryant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
 </head>
 <body>
+    <nav id="nav">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile" class="active">HOME</a></li>
+            <li><a href="#about" >ABOUT</a></li>
+            <li><a href="#achievements">ACHIEVEMENTS</a></li>
+            <li><a href="#brands">BRANDS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">HOME</a></li>
+            <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+            <li><a href="#achievements" onclick="toggleMenu()">ACHIEVEMENTS</a></li>
+            <li><a href="#brands" onclick="toggleMenu()">BRANDS</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">CONTACT US</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <section class="profile" id="profile">
+        <div class="front">
+            <div class = "video-container">
+                <video autoplay loop muted plays-inline class = "video"> 
+                    <source src="assets/videos/highlights.mp4" type = "video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="mid"></div>
+
+        <div class="profile-container">
+            <div class="profile-box">
+                <div class="profile-text">
+                    <h1>
+                        
+                        <span>“The</span>
+                        <span>moment</span>
+                        <span>you</span>
+                        <span>give</span>
+                        <span>up,</span>
+                        <span>is</span>
+                        <span>the</span>
+                        <span>moment</span>
+                        <span>you</span>
+                        <span>let</span>
+                        <span>somebody</span>
+                        <span>else</span>
+                        <span>win."</span>
+                    </h1>
+                    <h3>-Kobe Bryant</h3>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <img src="assets/bg_img/kobemamba.png">
+        </div>
+    </section>
+
+    <section  class="about" id="about">
+      <div class="about-front"></div>
+      <div class="about-mid"></div>
+      <div class="about-back"><!--<img src="assets/bg_img/bg sheesh1.png">--></div>
+      <div class="scrolling_text">
+        <div class="title">
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+        </div>
+        <div class="title">
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+            <span>| THE BLACK MAMBA |</span>
+        </div>
+      </div>
+      <div class="about-container">
+        <div class="card">
+          <div class="img-box">
+          <img src="assets/pictures/rookkobe.jpg"> 
+          </div>
+          <div class="intro">
+              <h1>ROOKIE MAMBA</h1>
+              <p>Kobe Bryant's rookie year in the NBA, during the 1996-1997 season, showcased his prodigious talent as he quickly
+              established himself as a rising star, averaging 7.6 points per game and earning a spot on the NBA All-Rookie Second
+              Team.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+              <img src="assets/pictures/senkobe.jpg"> 
+          </div>
+          <div class="intro">
+              <h1>PRIME MAMBA</h1>
+              <p>In his prime years, particularly during the mid-2000s, Kobe Bryant was an electrifying force in the NBA, known for his
+              scoring prowess and competitive spirit, winning multiple NBA championships and earning numerous All-Star and All-NBA
+              selections.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-box">
+              <img src="assets/pictures/retkobe.jpg"> 
+          </div>
+          <div class="intro">
+              <h1>MAMBA OUT</h1>
+              <p>Kobe Bryant's retirement year, the 2015-2016 NBA season, was a bittersweet farewell tour as he showcased his enduring
+              skills and received a heartfelt farewell from fans and fellow players, culminating in a remarkable 60-point performance
+              in his final game.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+      <div class="achi-front"></div>
+      <div class="achi-mid"></div>
+       <div class="achi-back"><!--<img src="assets/bg_img/bg sheesh1.png">--></div>  
+      <div class="scrolling_text">
+        <div class="title">
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+        </div>
+        <div class="title">
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+            <span>| THE MAMBA HISTORY |</span>
+        </div>
+      </div>   
+      <!-- </section> -->
+      <!-- <section class="timeline-section"> -->
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">June 26, 1996</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/1996.jpg" alt="" />
+            <h3>NBA DRAFT</h3>
+            <p>
+              Kobe Bryant was drafted in the 1996 NBA Draft directly from high
+              school. He was selected 13th overall by the Charlotte Hornets but
+              was promptly traded to the Los Angeles Lakers in exchange for
+              center Vlade Divac.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">1997</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/1997.jpg" alt="" />
+            <h3>SLAM DUNK Champion</h3>
+            <p>
+              In 1997, Kobe Bryant participated in the 1997 All-Star weekend and
+              emerged as the winner of the slam dunk contest.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">1999-2002</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/1999-2002.jpg" alt="" />
+            <h3>NBA Champion 3PEAT</h3>
+            <p>
+              From 1999 to 2002, the Los Angeles Lakers won the NBA championship
+              in a remarkable three-peat. Kobe Bryant and Shaquille O'Neal led
+              the team to these NBA championships.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">January 22, 2006</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2006.jpg" alt="" />
+            <h3>81 point Game</h3>
+            <p>
+              On January 22, 2006, Kobe Bryant delivered one of the most iconic
+              performances in NBA history when he scored an astounding 81 points
+              in a single game. Playing for the Los Angeles Lakers against the
+              Toronto Raptors, Kobe put on a display of incredible scoring
+              prowess.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">August 24, 2008</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2008.jfif" alt="" />
+            <h3>Olympic Gold medal</h3>
+            <p>
+              Kobe Bryant was a key member of the U.S. Men's Basketball Team
+              that competed in the 2008 Beijing Olympics. The team, often
+              referred to as the "Redeem Team," aimed to restore the United
+              States' dominance in international basketball after some
+              disappointing finishes in previous Olympics. Kobe played a vital
+              role in helping the team achieve their goal, and they won the gold
+              medal by defeating Spain in the final.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">June 14, 2009</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2009.jfif" alt="" />
+            <h3>NBA Champion</h3>
+            <p>
+              Kobe Bryant and the Los Angeles Lakers won the NBA championship in
+              the 2008-2009 season. This championship marked an important
+              milestone in Kobe's career and the Lakers' history. Kobe was a
+              dominant force throughout the season and the playoffs, and he
+              played a pivotal role in leading the Lakers to the NBA title.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">June 19, 2010</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2010.jpg" alt="" />
+            <h3>NBA Champion</h3>
+            <p>
+              Kobe Bryant and the Los Angeles Lakers indeed won the NBA
+              championship in the 2009-2010 season. This championship marked
+              Kobe's fifth NBA championship with the Lakers. The Lakers defeated
+              the Boston Celtics in the NBA Finals, winning the series in a
+              thrilling seven-game showdown.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">August 12, 2012</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2012.jpg" alt="" />
+            <h3>Olympic Gold Medal</h3>
+            <p>
+              Kobe Bryant was a part of the U.S. Men's Basketball Team that
+              competed in the 2012 London Olympics. He played a key role in the
+              team's success and helped the United States secure another Olympic
+              gold medal in basketball
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">November 29, 2015</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2015.jpg" alt="" />
+            <h3>Announce his retirement</h3>
+            <p>
+              Kobe Bryant announced his retirement from professional basketball
+              in a heartfelt essay titled "Dear Basketball." He made this
+              announcement on November 29, 2015, via The Players' Tribune, an
+              online platform where athletes can share their personal stories.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">April 13, 2016</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2016.jfif" alt="" />
+            <h3>KOBE'S 60 POINT GAME</h3>
+            <p>
+              On April 13, 2016, Kobe Bryant played his final NBA game, and it
+              turned into an unforgettable farewell performance. In that game,
+              Kobe scored an astonishing 60 points against the Utah Jazz.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">December 18, 2017</div>
+          <div class="timeline-content">
+            <img src="./assets/timeline-log/2017.jfif" alt="" />
+            <h3>Jersey Retirement</h3>
+            <p>
+              Kobe Bryant's jersey retirement took place on December 18, 2017,
+              in a special ceremony held at the Staples Center in Los Angeles.
+              The Los Angeles Lakers retired two of Kobe's jersey numbers, No. 8
+              and No. 24, to honor his remarkable career and contributions to
+              the franchise
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     
+    <section class="main-brand-container" id="brands">
+      <div class="front"></div>
+    
+      <div class="mid"></div>
+    
+      <div class="back"></div>
+      <div class="brand-container">
+        <div class="box b1 expanded"></div>
+        <div class="box b2">
+          <div class="grad">
+            <div class="box-content">
+              <!-- <img src="./assets/brand/NIKE.png"> -->
+            </div>
+            <div class="box-text">
+              Kobe Bryant's contract with Nike was a multi-year endorsement deal that began in
+              2003 and continued until his tragic passing in 2020. This partnership made Kobe
+              one of Nike's most iconic and enduring athlete collaborators. The contract included
+              signature shoe lines, apparel, and various promotional commitments, cementing Kobe's
+              legacy as one of the most influential figures in basketball and sports culture.
+            </div>
+          </div>
+        </div>
+        <div class="box b3">
+          <div class="grad">
+            <div class="box-content">
+              <!-- <img src="./assets/brand/NIKE.png"> -->
+            </div>
+            <div class="box-text">
+              Kobe Bryant had a longstanding partnership with Spalding, one of the leading
+              manufacturers of basketballs and sports equipment, where he endorsed and
+              collaborated on the development of basketballs, including the iconic "Spalding Kobe
+              Bryant Basketball" series.
+            </div>
+          </div>
+        </div>
+        <div class="box b4">
+          <div class="grad">
+            <div class="box-content">
+              <!-- <img src="./assets/brand/NIKE.png"> -->
+            </div>
+            <div class="box-text">
+            Bryant invested $6 million in BodyArmor in 2013 and received approximately 10%
+            of the company and a seat on the board of directors, the documents state. In 2021,
+            Coca-Cola purchased BodyArmor, which was valued at $8 billion at the time.
+            </div>
+          </div>
+        </div>
+        <div class="box b5">
+          <div class="grad">
+            <div class="box-content">
+              <!-- <img src="./assets/brand/NIKE.png"> -->
+            </div>
+            <div class="box-text">
+            After the Kobe 2's came out in 2000, it bombed in sales and Bryant wanted out of his
+            contract. Bryant reportedly paid eight million dollars himself to get out of his Adidas
+            Contract after the summer of 2002. The buyout had a condition that he could not sign with
+            another brand until 2003
+            </div>
+          </div>
+        </div>
+        <div class="box b6">
+          <div class="grad">
+            <div class="box-content">
+              <!-- <img src="./assets/brand/NIKE.png"> -->
+            </div>
+            <div class="box-text">
+              Kobe Bryant had a partnership with the luxury watch brand Hublot, resulting in the
+              creation of the "King Power Black Mamba" watch, which featured a black and gold design
+              inspired by his nickname "Black Mamba" and his basketball career, with only 250 pieces produced.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="scrolling_text">
+            <div class="title">
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+            </div>
+            <div class="title">
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+                <span>| CONTACT THE DEVS |</span>
+            </div>
+        </div>
+
+        <div class="achi-back"><img src="assets/bg_img/bg sheesh1.png"></div>
+  </body>
+            <div class="contact-container">
+                <div class="dev">
+                    <div class="contact-content">
+                        <img src="assets/devs/pat1.png">
+                    </div>
+                    <div class="contact-text">
+                        <h1>Bule, Dem Charles</h1>
+                        <a href="https://www.facebook.com/josuahcastro4"><i class="bx bxl-gmail"></i> josuahcastro1@gmail.com<br></a>
+                        <a href="https://github.com/PatriusCastro"><i class="bx bxl-github"></i> PatriusCastro</a>
+                    </div>
+                </div>
+                <div class="dev">
+                    <div class="contact-content">
+                        <img src="assets/devs/pat1.png">
+                    </div>
+                    <div class="contact-text">
+                        <h1>Castro, Patrick B.</h1>
+                        <a href="https://www.facebook.com/josuahcastro4"><i class="bx bxl-gmail"></i> josuahcastro1@gmail.com<br></a>
+                        <a href="https://github.com/PatriusCastro"><i class="bx bxl-github"></i> PatriusCastro</a>
+                    </div>
+                </div>
+                <div class="dev">
+                    <div class="contact-content">
+                        <img src="assets/devs/pat1.png">
+                    </div>
+                    <div class="contact-text">
+                        <h1>Robles, Vincent F.</h1>
+                        <a href="https://www.facebook.com/josuahcastro4"><i class="bx bxl-gmail"></i> josuahcastro1@gmail.com<br></a>
+                        <a href="https://github.com/PatriusCastro"><i class="bx bxl-github"></i> PatriusCastro</a>
+                    </div>
+                </div>
+                <div class="dev">
+                    <div class="contact-content">
+                        <img src="assets/devs/pat1.png">
+                    </div>
+                    <div class="contact-text">
+                        <h1>Salangsang, Arsenic M.</h1>
+                        <a href="https://www.facebook.com/josuahcastro4"><i class="bx bxl-gmail"></i> josuahcastro1@gmail.com<br></a>
+                        <a href="https://github.com/PatriusCastro"><i class="bx bxl-github"></i> PatriusCastro</a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="achi-back">
+            <div class = "video-closing">
+                <video autoplay plays-inline class = "video-closing"> 
+                    <source src="assets/videos/kobemessage.mp4" type = "video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-contain">
+        <div class="footer-bottom">
+          <p>Copyright &copy;2023;</p>
+        </div>
+      </div>
+    </footer>
+
+<script src="script.js"></script>
+
 </body>
+
+
+
 </html>
