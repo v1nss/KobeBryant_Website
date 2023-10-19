@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   transition: 0.3s ease;
 }
 
@@ -840,12 +840,13 @@ video {
  }
 
  .b5 {
-   /* background-image:url("./assets/kobenike.jpg");   */
+   background-image:url("./assets/kobeadidas.jpg");  
+  filter: grayscale(70%);
  }
 
  .b6 {
-   /* background-image:url("./assets/kobenike.jpg");   */
- }
+background-image: url("./assets/kobewatch1.jpeg");
+  filter: grayscale(70%); }
 
 /* Contacts */
 
@@ -930,4 +931,22 @@ video {
   filter: grayscale(100%);
   object-fit: cover;
   opacity: 0.7;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000000;
+}
+
+.footer-contain {
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.footer-bottom {
+  color: white;
 }
