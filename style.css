@@ -455,6 +455,12 @@ video {
 #about {
   justify-content: center;
   gap: 5rem;
+  display: flex;
+  height: auto;
+  z-index: 4;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .about-front,
@@ -550,6 +556,7 @@ video {
 .intro p {
   color: white;
   margin: 20px;
+  font-size: 0.8rem;
   visibility: hidden;
   opacity: 0;
 }
@@ -582,7 +589,7 @@ video {
 #achievements{
   justify-content: center;
   gap: 5rem;
-  display:flex;
+  display: flex;
   height: auto;
   z-index: 4;
   min-height: 100vh;
@@ -704,12 +711,7 @@ video {
 	line-height: 22px;
 }
 
-/* Highlights */
-
-#highlights{
-  justify-content: center;
-  gap: 5rem;
-}
+/* Brands */
 
  .brand-container {
    margin-top: 5%;
@@ -853,12 +855,18 @@ background-image: url("./assets/kobewatch1.jpeg");
 #contact{
   justify-content: center;
   gap: 5rem;
+  display: flex;
+  height: auto;
+  z-index: 4;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .contact-container{
   padding-top: 10vh;
   height: 30%;
-  width: 75%;
+  width: 70%;
   display: inline-flex;
   align-self: center;
   justify-content: center;
@@ -872,28 +880,26 @@ background-image: url("./assets/kobewatch1.jpeg");
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  padding: 20px;
+  min-width: 40%;
 }
 
 .contact-content{
-  height: 100px;
-  width: 100px;
-  margin-right: 20px;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
   border-radius: 100px;
   background-color: #5252525e;
 }
 
 .contact-content img{
-  height: 100px;
-  width: 100px;
-  margin-right: 20px;
+  height: 80px;
+  width: 80px;
   border-radius: 100px;
   border: #cc9d04 solid 1px;
 }
 
 .contact-text{
   align-self: center;
-  padding-right: 30px;
 }
 
 .contact-text h1{
