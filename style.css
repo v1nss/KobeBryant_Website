@@ -734,7 +734,6 @@ video {
    height: 100%;
    background-color: #fac106;
    margin: 8px;
-   /* transition: width 0.3s ease-in; */
    background-size: cover;
    background-position: center;
    transition: 0.2s ease;
@@ -754,9 +753,6 @@ video {
    width: 50%;
    height: 100%;
    filter: grayscale(0%);
-
-   /* background-image: transparent; */
-   /* transition-delay: .5s; */
  }
 
  .brand-container:hover .expanded {
@@ -774,24 +770,14 @@ video {
  }
 
  .box-content {
-   /* justify-content: center; */
-   /* align-items: center; */
-   /* width: 200px; */
    height: 300px;
-   /* object-fit:cover; */
-   /* flex-direction: column; */
-   /* display: flex;
-  align-items: center;  */
  }
 
  .box-text {
    font-size: 11px;
    color: rgb(255, 255, 255);
-   /* padding:20px; */
    text-align: justify;
    transition: 0.2s ease;
-   /* transition-delay: .3s; */
-   /* width: 100%; */
    opacity: 0;
    margin: 10%;
  }
@@ -804,7 +790,6 @@ video {
    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
    width: 100%;
    height: 100%;
-   /* transition-delay: .3s; */
    transition-delay: .3s;
    flex-direction: column;
    display: flex;
@@ -812,7 +797,6 @@ video {
  }
 
  .grad:hover .box-text {
-   /* background-image: linear-gradient(180deg,rgba(0, 0, 0, 0), rgb(0, 0, 0)); */
    color: rgb(255, 255, 255);
    transition: 0.2s ease;
    transition-delay: .6s;
@@ -826,9 +810,6 @@ video {
  .b2 {
    background-image: url("./assets/kobenike1.png");
    filter: grayscale(70%);
-
-   /* background-image: url("./assets/brand/NIKE.png"); */
-
  }
 
  .b3 {
@@ -859,20 +840,30 @@ background-image: url("./assets/kobewatch1.jpeg");
   height: auto;
   z-index: 4;
   min-height: 100vh;
-  position: relative;
   overflow-y: hidden;
 }
 
 .contact-container{
   padding-top: 10vh;
-  height: 30%;
-  width: 70%;
-  display: inline-flex;
+  row-gap: 50px;
+  display: flex;
+  flex-direction: column ;
   align-self: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
   position: relative;
   z-index: 4;
+}
+
+.contact-upper{
+  z-index: 4;
+  display:flex;
+  gap:65px
+}
+
+.contact-lower{
+  z-index: 4;
+  display:flex;
+  gap:55px
 }
 
 .dev{
