@@ -88,6 +88,23 @@
     .contact-container{
         width: 100%;
         height: 50%;
+        align-items: left;
+        /* align-self: center; */
+        /* padding-left: 15%; */
+    }
+
+    .contact-upper{
+        /* justify-content: center; */
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+    }
+
+    .contact-lower{
+        /* justify-content: center; */
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
     }
 
     .contact-content,
@@ -323,6 +340,14 @@
     .contact-text h1{
         font-size: 1rem;
     }
+
+    .brand-container{
+        flex-direction: row;
+    }
+    .box{
+        flex-direction: row;
+    }
+
 
 }   
 
@@ -601,7 +626,22 @@
         width: 100%;
         height: 50%;
         padding-top: 20vh;
+        /* justify-content: center; */
     }
+
+    /* .conntact-upper{
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conntact-lower{
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    } */
 
     .dev{
         justify-content: center;

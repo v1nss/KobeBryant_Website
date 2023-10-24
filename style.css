@@ -871,7 +871,7 @@ background-image: url("./assets/kobewatch1.jpeg");
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  min-width: 40%;
+  /* min-width: 40%; */
 }
 
 .contact-content{
